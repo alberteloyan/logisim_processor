@@ -272,6 +272,8 @@ verbose = False
 def debug(*args):
   if verbose:
     sys.stdout.write(' '.join([str(arg) for arg in args]) + '\n')
+  else:
+    sys.stdout.write('No output')
 
 if __name__ == "__main__":
   usage = "%prog infile [options]"
